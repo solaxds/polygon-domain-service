@@ -487,7 +487,7 @@ const App = () => {
 							<img alt="Network logo" className="logo" src={ network.includes("Polygon") ? polygonLogo : ethLogo} />
 							{/* ##
 								// The question mark operator ? takes three operands (contd. below):
-								// 1) some condition 2) a value if that condition is TRUE 3) and a value if that condition is TRUE
+								// 1) some condition 2) a value if that condition is TRUE 3) and a value if that condition is FALSE
 								// It is used in JavaScript to shorten an if else statement to one line of code. */}
 							{ currentAccount ? <p> Wallet: {currentAccount.slice(0, 6)}...{currentAccount.slice(-4)} </p> : <p> Not connected </p> }
 						</div>
