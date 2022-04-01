@@ -10,7 +10,7 @@ import ethLogo from './assets/ethlogo.png';
 import { networks } from './utils/networks';
 
 // Constants
-const TWITTER_HANDLE = 'dsxsola';
+const TWITTER_HANDLE = 'awoldavi';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 // Add the domain you will be minting
@@ -485,6 +485,10 @@ const App = () => {
 						{/* Display a logo and wallet connection status */}
 						<div className="right">
 							<img alt="Network logo" className="logo" src={ network.includes("Polygon") ? polygonLogo : ethLogo} />
+							{/* ##
+								// The question mark operator ? takes three operands (contd. below):
+								// 1) some condition 2) a value if that condition is TRUE 3) and a value if that condition is TRUE
+								// It is used in JavaScript to shorten an if else statement to one line of code. */}
 							{ currentAccount ? <p> Wallet: {currentAccount.slice(0, 6)}...{currentAccount.slice(-4)} </p> : <p> Not connected </p> }
 						</div>
 					</header>
